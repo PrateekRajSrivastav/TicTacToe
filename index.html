@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="most-upper-container">
+        <div class="upper-container">
+            <div class="container">
+                <div class="text_left">
+                    <img src="img/brain pngegg (4).png" alt="#">
+                </div>
+                
+                <!-- main content-->
+                <div class="right-content">
+                    <h1 id="title">Tic Tac Toe</h1>
+                    <div class="game-content">
+                        <div id="game-setup">
+                            <div>
+                                <label for="grid-size">Select Grid Size:</label>
+                                <select id="grid-size">
+                                    <option value="3">3x3</option>
+                                    <option value="4">4x4</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="game-mode">Select Game Mode:</label>
+                                <select id="game-mode">
+                                    <option value="2players">2 Players</option>
+                                    <option value="computer">Play with Computer</option>
+                                </select>
+                                
+                            </div>
+                            <button id="start-game">Start Game</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="board" class="hidden"></div>
+                <div class="message" id="message"></div>
+            </div>
+            <div id="popup" class="hidden">
+                <p id="popup-message"></p>
+                <button id="homeButton">Home</button>
+                <button id="restartButton">Restart</button>
+            </div>
+        </div>
+        <footer>
+            <div class="footcontainer">
+                <div class="foot">
+                    @Copyrigth by Prateek Raj
+                </div>
+                <div class="foot">
+                    +91 8737016747
+                </div>
+                <div class="foot">
+                    <link rel="stylesheet" href="https://github.com/PrateekRajSrivastav">
+                    <a href="https://github.com/PrateekRajSrivastav">
+                        <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+                        alt="Click to visit github" style="width:42px;height:42px;">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

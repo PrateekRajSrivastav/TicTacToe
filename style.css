@@ -1,0 +1,166 @@
+body {
+    display: flex;
+    height: 100vh;
+    /* justify-content: center;
+    align-items: center; */
+
+    text-align: center;
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+    flex-direction: row;
+}
+.most-upper-container{
+    display: flex;
+    flex-direction: column;
+}
+.upper-container{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    width: 50%;
+    margin-left:20px;
+
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    width: 80%;
+    max-width: 1000px;
+    
+}
+.text_left{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    padding: 1.5rem;
+    width: 50%;
+}
+
+.text_left img{
+    max-width: 100vh;
+    width: 100%;
+    width:fit-content;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    
+}
+.right-content h1{
+    position: fixed;
+    top: 20px;
+    height: 20%;
+    margin-left: 13rem;
+}
+.right-content {
+    
+    position: relative;
+    display: flex;
+    text-align: center;
+    
+    margin: 20rem 15rem;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 80%;
+    
+}
+.game-setup{
+    padding: 1rem;
+    height: 20rem;
+    margin: 10rem 2rem;
+    align-self: flex-end;
+}
+.hidden {
+    display: none;
+}
+
+#board {
+    display: grid;
+    gap: 10px;
+
+    margin-top: 10rem;
+    
+}
+
+
+.cell {
+    background: rgb(4, 100, 17);
+    /* background: linear-gradient(106deg, rgba(242,255,238,1) 37%, rgba(203,246,183,0.9725140056022409) 77%); */
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition:background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #f1f1f1;
+}
+
+.message {
+    font-size: 22px;
+    margin: 10rem 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition:background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+/* Winning animation */
+@keyframes winning {
+    0% { background-color: #fff; }
+    50% { background-color: #4caf50; }
+    100% { background-color: #fff; }
+}
+
+.winning-cell {
+    animation: winning 0.5s ease-in-out infinite;
+}
+
+/* Popup style */
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #fff;
+    border: 2px solid #000;
+}
+
+#popup p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#popup button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.footcontainer{
+    height: 10rem;
+    background-color: #1b1919;
+    padding : 2rem;
+    
+}
+.foot{
+    display: flex;
+    flex-direction: column;
+    height: 32%;
+    
+    width:100vw;
+    color: white;
+    background-color: #0e0e0e;
+}
